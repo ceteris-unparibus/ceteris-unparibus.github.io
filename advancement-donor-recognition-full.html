@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UO Advancement Donor Recognition Outreach Study</title>
+    <link rel="stylesheet" href="project8-styles.css?v=32">
+</head>
+<body class="project-detail">
+    <header>
+        <p class="project-nav"><a href="index.html" title="Return to home page">Home</a></p>
+        <h1>UO Advancement Donor Recognition Outreach Study</h1>
+        <p class="subtitle">A University of Oregon Advancement Leadership Internship project evaluating donor recognition outreach and developing an engagement metric tool to guide future stewardship strategy.</p>
+    </header>
+
+    <main class="project-page">
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                During my UO Advancement Leadership Internship, I worked on a longitudinal
+                study of a donor recognition outreach effort for long-term Loyalty Circle
+                donors. The project combined outreach activity data, giving indicators, and
+                engagement outcomes to evaluate whether the campaign reached its intended
+                audience, how donor response varied across segments, and what future
+                stewardship efforts could learn from those patterns.
+            </p>
+            <p>
+                The work culminated in a project report and a reusable engagement metric tool
+                that is still being used to help shape outreach efforts. The public summary
+                here describes the study design, metric, and findings at a high level. The
+                original working report is not linked because donor-facing and internal
+                advancement materials should be reviewed before public distribution.
+            </p>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <p class="metric-value">460</p>
+                    <p>Personalized outreach messages sent to long-term Loyalty Circle donors.</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-value">68%</p>
+                    <p>Open rate used to evaluate initial donor reach and message reception.</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-value">132</p>
+                    <p>Donors completed the video activity, helping identify the link-click conversion point.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Campaign Reach</h2>
+            <p>
+                Before the engagement index was applied, the first question was whether the
+                outreach actually reached donors and where participation narrowed. The largest
+                drop happened between opening the message and clicking through to the video,
+                making the click-through step the clearest point for strategic improvement.
+            </p>
+            <div class="activity-phase-chart" aria-label="Participation by activity phase">
+                <h3>Participation by Activity Phase</h3>
+                <div class="phase-bars">
+                    <div class="phase-bar" style="--bar-height: 100%;">
+                        <span class="phase-value">441</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Analyzed</span>
+                    </div>
+                    <div class="phase-bar" style="--bar-height: 99%;">
+                        <span class="phase-value">438</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Delivered</span>
+                    </div>
+                    <div class="phase-bar" style="--bar-height: 67%;">
+                        <span class="phase-value">296</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Opened</span>
+                    </div>
+                    <div class="phase-bar" style="--bar-height: 33%;">
+                        <span class="phase-value">146</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Clicked</span>
+                    </div>
+                    <div class="phase-bar" style="--bar-height: 32%;">
+                        <span class="phase-value">142</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Started</span>
+                    </div>
+                    <div class="phase-bar" style="--bar-height: 30%;">
+                        <span class="phase-value">132</span>
+                        <span class="phase-fill"></span>
+                        <span class="phase-label">Completed</span>
+                    </div>
+                </div>
+                <p class="table-note">Recreated from the original report chart values; counts reflect the active records analyzed in the study.</p>
+            </div>
+        </section>
+
+        <section class="engagement-index-section">
+            <h2>Engagement Index</h2>
+            <p>
+                The engagement index translated outreach-platform behaviors into a practical
+                score that could flag delivery problems, distinguish passive opens from active
+                engagement, and compare response patterns across donor segments.
+            </p>
+            <div class="index-visual">
+                <div class="index-scale" aria-label="Engagement index scoring scale">
+                    <div class="index-band delivery">
+                        <span class="index-score">&lt; 0</span>
+                        <span>Delivery issue</span>
+                    </div>
+                    <div class="index-band no-engagement">
+                        <span class="index-score">0-1</span>
+                        <span>Did not engage</span>
+                    </div>
+                    <div class="index-band opened">
+                        <span class="index-score">1</span>
+                        <span>Opened message</span>
+                    </div>
+                    <div class="index-band partial">
+                        <span class="index-score">1-2</span>
+                        <span>Engaged partially</span>
+                    </div>
+                    <div class="index-band complete">
+                        <span class="index-score">2</span>
+                        <span>Completed activity</span>
+                    </div>
+                    <div class="index-band substantive">
+                        <span class="index-score">&gt; 2</span>
+                        <span>Substantive engagement</span>
+                    </div>
+                </div>
+
+                <div class="index-formula" aria-label="Engagement index formula">
+                    <div class="formula-card">
+                        <span class="formula-value">-1</span>
+                        <span>Delivery problem</span>
+                    </div>
+                    <div class="formula-operator">+</div>
+                    <div class="formula-card">
+                        <span class="formula-value">1</span>
+                        <span>Opened message</span>
+                    </div>
+                    <div class="formula-operator">+</div>
+                    <div class="formula-card">
+                        <span class="formula-value">0.25 each</span>
+                        <span>Clicked, started, watched 50%, finished</span>
+                    </div>
+                    <div class="formula-operator">+</div>
+                    <div class="formula-card">
+                        <span class="formula-value">+1 each</span>
+                        <span>Repeat views, shares, downloads, replies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>What the Index Revealed</h2>
+            <p>
+                The engagement index made the study more useful than a simple completion-rate
+                report. Several donors who did not fully complete the video still scored in
+                the substantive-engagement range because they shared, downloaded, replied, or
+                returned to the activity. That helped identify interest that a completion-only
+                metric would have treated as a weak response.
+            </p>
+            <div class="insight-grid">
+                <div class="insight-card">
+                    <p class="insight-value">&gt; 2</p>
+                    <h3>Substantive Engagement Beyond Completion</h3>
+                    <p>Decimal scores above 2 flagged donors who had not completed every video stage but still took additional high-intent actions.</p>
+                </div>
+                <div class="insight-card">
+                    <p class="insight-value">2.07</p>
+                    <h3>A Segment Worth Studying</h3>
+                    <p>Giving Level 4 had an average engagement score above 2 despite a lower completion rate than nearby levels.</p>
+                </div>
+                <div class="insight-card">
+                    <p class="insight-value">97%</p>
+                    <h3>The Click Was the Hinge</h3>
+                    <p>Among recipients who clicked the link, nearly all started the video, and most of those who started went on to complete it.</p>
+                </div>
+                <div class="insight-card">
+                    <p class="insight-value">10%</p>
+                    <h3>No-Click Gap</h3>
+                    <p>The no-click group had an average gift-size change that was less than 10% of the clicked group, despite having more individuals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <div class="chart-card">
+                <div class="chart-copy">
+                    <h2>Giving Level Was Not a Simple Engagement Predictor</h2>
+                    <p class="chart-interpretation">
+                        This pattern shows that giving level alone was not a reliable proxy
+                        for engagement; some donors below the highest giving level showed
+                        substantive engagement and may represent meaningful future
+                        potential.
+                    </p>
+                </div>
+                <div class="chart-panel">
+                    <h3>Average Engagement Score by Giving Level</h3>
+                    <div class="segment-chart" aria-label="Average engagement score and completion rate by giving level">
+                        <div class="segment-row">
+                            <span class="segment-label">Giving Level 1</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 70%;"></span></span>
+                            <span class="segment-score">1.54</span>
+                        </div>
+                        <div class="segment-row">
+                            <span class="segment-label">Giving Level 2</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 82%;"></span></span>
+                            <span class="segment-score">1.80</span>
+                        </div>
+                        <div class="segment-row">
+                            <span class="segment-label">Giving Level 3</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 90%;"></span></span>
+                            <span class="segment-score">1.98</span>
+                        </div>
+                        <div class="segment-row highlight-row">
+                            <span class="segment-label">Giving Level 4</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 94%;"></span></span>
+                            <span class="segment-score">2.07</span>
+                        </div>
+                        <div class="segment-row highlight-row">
+                            <span class="segment-label">Giving Level 5</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 100%;"></span></span>
+                            <span class="segment-score">2.19</span>
+                        </div>
+                        <div class="segment-row">
+                            <span class="segment-label">Giving Level 6</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 71%;"></span></span>
+                            <span class="segment-score">1.56</span>
+                        </div>
+                        <div class="segment-row">
+                            <span class="segment-label">Unlisted</span>
+                            <span class="segment-track"><span class="segment-fill" style="--bar-width: 53%;"></span></span>
+                            <span class="segment-score">1.16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <div class="chart-card">
+                <div class="chart-copy">
+                    <h2>Engagement Predicted Later Activity</h2>
+                    <p class="chart-interpretation">
+                        The steady rise in later activity suggests that the engagement index
+                        captured more than one-time response; it helped identify donors
+                        whose outreach behavior signaled continued relationship momentum.
+                    </p>
+                </div>
+                <div class="chart-panel">
+                    <h3>Percent Change in Activity by Giving Level</h3>
+                    <div class="activity-change-chart" aria-label="Activity rate of change by engagement score">
+                        <div class="activity-change-row">
+                            <span class="segment-label">&lt; 0</span>
+                            <span class="mini-bar"><span style="--bar-width: 11%;"></span></span>
+                            <span class="segment-score">1%</span>
+                        </div>
+                        <div class="activity-change-row">
+                            <span class="segment-label">0-1</span>
+                            <span class="mini-bar"><span style="--bar-width: 56%;"></span></span>
+                            <span class="segment-score">5%</span>
+                        </div>
+                        <div class="activity-change-row">
+                            <span class="segment-label">1-2</span>
+                            <span class="mini-bar"><span style="--bar-width: 78%;"></span></span>
+                            <span class="segment-score">7%</span>
+                        </div>
+                        <div class="activity-change-row highlight-row">
+                            <span class="segment-label">&gt; 2</span>
+                            <span class="mini-bar"><span style="--bar-width: 100%;"></span></span>
+                            <span class="segment-score">9%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Recommendations</h2>
+            <p>
+                The study recommended refining donor segmentation so outreach strategy is
+                informed by behavioral signals, not giving level alone. Engagement patterns
+                help identify which donors are receptive to particular forms of
+                recognition. This matters because the study showed that gift amount is not
+                the same as engagement level; highly engaged donors at lower giving levels
+                may represent important future relationship and giving potential. These
+                signals can also show which audiences may respond better to a different
+                message, format, or timing.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lorissa Hughes. UO Advancement outreach study summary.</p>
+    </footer>
+</body>
+</html>
