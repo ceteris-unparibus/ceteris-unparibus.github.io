@@ -11,7 +11,7 @@
 /* Main color palette for the page. */
 :root {
     --font-body: Charter, "Iowan Old Style", Cambria, Georgia, "Times New Roman", serif;
-    --font-heading: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --font-heading: "Big Caslon", "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
     --font-accent: "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
     --page: #f7f7f2;
     --surface: rgba(255, 255, 250, 0.96);
