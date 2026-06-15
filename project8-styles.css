@@ -12,6 +12,7 @@
 :root {
     --font-body: Charter, "Iowan Old Style", Cambria, Georgia, "Times New Roman", serif;
     --font-heading: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --font-accent: "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
     --page: #f7f7f2;
     --surface: rgba(255, 255, 250, 0.96);
     --surface-strong: #ffffff;
@@ -446,22 +447,30 @@ button:focus,
     border-color: var(--green-dark);
 }
 
-.button.resume-button {
-    background: transparent;
-    color: var(--green-dark);
-    border-color: var(--muted);
-    box-shadow: none;
+.section-heading-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 20px;
 }
 
-.button.resume-button:hover,
-.button.resume-button:focus {
-    background: rgba(214, 231, 220, 0.3);
-    border-color: var(--green-dark);
-    color: var(--green-dark);
+.section-heading-row h2 {
+    margin-bottom: 0;
 }
 
-#experience .button {
-    margin-top: 20px;
+.resume-link {
+    color: var(--green-dark);
+    font-size: 1rem;
+    font-weight: 650;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    white-space: nowrap;
+}
+
+.resume-link:hover,
+.resume-link:focus {
+    color: var(--green);
 }
 
 /* Intro/subtitle text should feel quieter than the main heading. */
@@ -482,7 +491,8 @@ button:focus,
 .profile-tagline {
     max-width: 820px;
     color: #3f4f47;
-    font-size: 1.3rem;
+    font-family: var(--font-accent);
+    font-size: 1.32rem;
     font-style: italic;
     font-weight: 400;
     line-height: 1.48;
