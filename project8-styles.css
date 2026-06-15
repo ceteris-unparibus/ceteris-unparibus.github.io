@@ -461,7 +461,7 @@ button:focus,
 
 .resume-link {
     color: var(--green-dark);
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 650;
     text-decoration: underline;
     text-underline-offset: 4px;
