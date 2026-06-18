@@ -355,15 +355,14 @@ blockquote {
 }
 
 .interpretation-section h3 {
-    max-width: 860px;
     margin: 22px 0 10px;
-    padding: 6px 10px;
-    border-radius: 6px;
+    padding: 7px 12px;
+    border-radius: 8px;
     color: var(--green-dark);
-    background: rgba(228, 238, 232, 0.62);
+    background: var(--green-soft);
     font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 550;
+    font-style: normal;
+    font-weight: 600;
     line-height: 1.35;
 }
 
