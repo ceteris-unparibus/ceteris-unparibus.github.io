@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Site Suitability Analysis | Lorissa Hughes</title>
+    <link rel="stylesheet" href="/project8-styles.css?v=39">
+</head>
+<body class="project-detail">
+    <header>
+        <p class="project-nav"><a href="/" title="Return to home page">Home</a></p>
+        <h1>GIS Site Suitability Analysis</h1>
+        <p class="subtitle">Using ArcGIS Pro to identify and compare potential locations for homelessness service facilities in the Eugene–Springfield metropolitan area.</p>
+    </header>
+
+    <main class="project-page">
+        <section class="project-overview">
+            <h2>About the Project</h2>
+            <p class="overview-lead">
+                This project applied spatial analysis and cartographic design to a practical
+                public-service question: where could new homelessness service facilities be
+                located?
+            </p>
+            <p>
+                Publicly owned, vacant parcels considered available for development were
+                screened for suitability. The resulting sites were then compared using
+                neighborhood context, access to bus stops, proximity to existing facilities
+                and parks, parcel size, and land value. Poverty rates were mapped to help
+                show areas of potential need.
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Mapping Suitable Parcels</h2>
+            <p>
+                The first layout shows 20 candidate parcels across the Eugene–Springfield
+                metropolitan urban growth boundary. It places those parcels alongside bus
+                stops, existing facilities, parks, and the share of residents in poverty by
+                block group.
+            </p>
+            <figure class="map-figure">
+                <a href="/gis-project/Suitable Parcels Layout-2.pdf" target="_blank" rel="noreferrer noopener" title="Open the suitable parcels map as a PDF">
+                    <img src="/gis-project/suitable-public-parcels.jpg" alt="Map of suitable public parcels for homelessness facilities in the Eugene-Springfield metropolitan urban growth boundary">
+                </a>
+                <figcaption>Select the map to open the full-resolution PDF.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Comparing the Candidate Sites</h2>
+            <p>
+                An attribute table and summary charts compare the 20 parcels by property
+                class, neighborhood, total land value, value per acre, and acreage. Most of
+                the candidates were residential parcels, while the full set ranged from just
+                over one acre to nearly 43 acres.
+            </p>
+            <figure class="map-figure">
+                <a href="/gis-project/Table Charts Layout.pdf" target="_blank" rel="noreferrer noopener" title="Open the parcel comparison layout as a PDF">
+                    <img src="/gis-project/parcel-comparison-charts.jpg" alt="Parcel table and charts comparing property type, median value per acre, and median acreage">
+                </a>
+                <figcaption>Select the layout to open the full-resolution PDF.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Top Three Parcel Choices</h2>
+            <p>
+                The final recommendation narrowed the candidates to three vacant residential
+                parcels in the Harlow Neighbors area. The sites offered different tradeoffs
+                between size, value, transit access, and proximity to Alton Baker Park.
+            </p>
+
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Choice</th>
+                            <th scope="col">Acres</th>
+                            <th scope="col">Total value</th>
+                            <th scope="col">Value per acre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>3.65</td>
+                            <td>$498,088</td>
+                            <td>$136,313</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1.56</td>
+                            <td>$157,618</td>
+                            <td>$100,777</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>12.05</td>
+                            <td>$865,049</td>
+                            <td>$71,791</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-grid">
+                <article class="evidence-card">
+                    <h3>Choices 1 and 2</h3>
+                    <p>
+                        These parcels are closest to bus routes and sit at the edge of Alton
+                        Baker Park. Their location could support a smaller service facility or
+                        a program connected with job skills and community service.
+                    </p>
+                </article>
+                <article class="evidence-card">
+                    <h3>Choice 3</h3>
+                    <p>
+                        At 12.05 acres, this was the largest finalist and had the lowest value
+                        per acre. Its size could accommodate a broader program beyond basic
+                        service provision.
+                    </p>
+                </article>
+            </div>
+
+            <figure class="map-figure">
+                <a href="/gis-project/Top Choices Layout.pdf" target="_blank" rel="noreferrer noopener" title="Open the top parcel choices layout as a PDF">
+                    <img src="/gis-project/top-parcel-choices.jpg" alt="Map, charts, and table showing the top three parcel choices for homelessness facilities development">
+                </a>
+                <figcaption>Select the layout to open the full-resolution PDF.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Skills Demonstrated</h2>
+            <ul class="skill-list">
+                <li>GIS-based site suitability screening</li>
+                <li>Spatial joins and attribute-based parcel comparison</li>
+                <li>Mapping demographic and service-access context</li>
+                <li>Cartographic layout, inset maps, tables, and charts</li>
+                <li>Translating spatial evidence into a policy recommendation</li>
+            </ul>
+            <p class="project-actions">
+                <a class="button" href="/gis-project/Suitable Parcels Layout-2.pdf" target="_blank" rel="noreferrer noopener">Suitable Parcels PDF</a>
+                <a class="button" href="/gis-project/Top Choices Layout.pdf" target="_blank" rel="noreferrer noopener">Top Choices PDF</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lorissa Hughes. GIS site suitability project created in ArcGIS Pro.</p>
+    </footer>
+</body>
+</html>

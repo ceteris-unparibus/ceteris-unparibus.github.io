@@ -655,6 +655,43 @@ button:focus,
     background: #ffffff;
 }
 
+/* Presents GIS layouts as readable portfolio figures with links to the source PDFs. */
+.map-figure {
+    margin: 22px 0 4px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 18px rgba(31, 63, 50, 0.08);
+}
+
+.map-figure a {
+    display: block;
+}
+
+.map-figure img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.map-figure figcaption {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    text-align: center;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.skill-list {
+    columns: 2;
+    column-gap: 42px;
+}
+
 /* Highlights compact code snippets and numeric results on project pages. */
 .result-bubble {
     margin: 16px 0 24px;
@@ -1111,6 +1148,10 @@ button:focus,
     /* Stacks featured projects so they stay readable on narrow screens. */
     .featured-projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skill-list {
+        columns: 1;
     }
 
     /* Stacks the intro text and profile photo on narrow screens. */
