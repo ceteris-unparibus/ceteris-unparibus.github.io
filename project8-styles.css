@@ -59,7 +59,7 @@ body::before {
     height: 100%;
     background-image:
         linear-gradient(rgba(247, 247, 242, 0.66), rgba(247, 247, 242, 0.88)),
-        url("redwoods-background.png");
+        url("/redwoods-background.png");
     background-position: center;
     background-size: cover;
     opacity: 0.95;
