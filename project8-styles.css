@@ -541,7 +541,6 @@ button:focus,
     color: #3f4f47;
     font-family: var(--font-heading);
     font-size: 1.32rem;
-    font-style: italic;
     font-weight: 400;
     line-height: 1.48;
 }
