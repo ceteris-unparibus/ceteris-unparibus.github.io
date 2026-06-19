@@ -179,6 +179,12 @@ body.project-detail > header h1 {
     font-size: 2.2rem;
 }
 
+body.project-detail > header {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .thesis-title {
     max-width: none;
     font-size: 1.95rem;
@@ -242,6 +248,23 @@ h4 {
 
 .project-category > h4 {
     margin-top: 24px;
+}
+
+/* Uses the sage band for high-level skill categories without repeating it everywhere. */
+#skills > h3 {
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: var(--green-soft);
+    color: var(--green-dark);
+    font-size: 1.3rem;
+}
+
+/* Gives schools and roles a quieter accent than the full category bands. */
+#education > h3,
+#experience > h3 {
+    padding-left: 12px;
+    border-left: 4px solid rgba(138, 154, 91, 0.72);
 }
 
 /* Subtle divider under the header intro. */
@@ -589,7 +612,34 @@ button:focus,
 }
 
 .project-nav {
-    margin: 0 0 18px;
+    position: absolute;
+    top: -36px;
+    left: 8px;
+    margin: 0;
+}
+
+.project-nav a {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--green);
+    font-size: 0.96rem;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-color: rgba(47, 93, 74, 0.5);
+    text-underline-offset: 4px;
+}
+
+.project-nav a + a {
+    margin-left: 18px;
+}
+
+.project-nav a:hover,
+.project-nav a:focus {
+    background: transparent;
+    color: var(--green-dark);
+    text-decoration-color: var(--green-dark);
 }
 
 .code-sample {
@@ -812,11 +862,33 @@ button:focus,
     font-size: 1.48rem;
 }
 
-/* Thesis page layouts for evidence, metrics, and paired plots. */
-.thesis-actions {
-    margin-top: 20px;
+/* Keeps full-project resources quiet and accessible beneath project taglines. */
+.resource-links {
+    gap: 12px 24px;
+    margin-top: 18px;
 }
 
+.resource-links .button {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--green);
+    text-decoration: underline;
+    text-decoration-color: rgba(47, 93, 74, 0.62);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.resource-links .button:hover,
+.resource-links .button:focus {
+    border: 0;
+    background: transparent;
+    color: var(--green-dark);
+    text-decoration-color: var(--green-dark);
+}
+
+/* Thesis page layouts for evidence, metrics, and paired plots. */
 .metric-grid,
 .evidence-grid,
 .plot-grid {
@@ -1148,6 +1220,10 @@ button:focus,
     body {
         padding: 22px 14px;
         font-size: 17px;
+    }
+
+    body.project-detail {
+        padding-top: 58px;
     }
 
     /* Keeps the main panels from feeling too tight on mobile. */
