@@ -536,13 +536,25 @@ button:focus,
     line-height: 1.5;
 }
 
-.profile-tagline {
+.profile-role {
     max-width: 820px;
-    color: #3f4f47;
+    margin-bottom: 4px;
+    color: var(--green-dark);
     font-family: var(--font-heading);
     font-size: 1.32rem;
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+.profile-tagline {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #3f4f47;
+    font-family: var(--font-heading);
+    font-size: 1.12rem;
+    font-style: italic;
     font-weight: 400;
-    line-height: 1.48;
+    line-height: 1.45;
 }
 
 /* Small highlight style for key phrases. */
